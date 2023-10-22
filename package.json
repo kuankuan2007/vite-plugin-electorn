@@ -1,0 +1,24 @@
+{
+  "name": "@kuankuan/vite-plugin-electron",
+  "version": "0.0.1",
+  "description": "Make electron development in vite projects easier and more intuitive",
+  "main": "index.ts",
+  "module":"index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron",
+    "vite"
+  ],
+  "author": "kuankuan",
+  "license": "MulanPSL-2.0",
+  "dependencies": {
+    "electron": "latest",
+    "electron-builder": "latest",
+    "vite": "latest"
+  },"bugs": {
+    "url": "https://github.com/kuankuan2007/vite-plugin-electron/issues",
+    "email": "gouhaoming2007@qq.com"
+  }
+}
