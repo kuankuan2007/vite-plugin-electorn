@@ -1,11 +1,12 @@
 {
   "name": "@kuankuan/vite-plugin-electron",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make electron development in vite projects easier and more intuitive",
-  "main": "index.ts",
-  "module":"index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"tsc"
   },
   "keywords": [
     "electron",
@@ -17,8 +18,15 @@
     "electron": "latest",
     "electron-builder": "latest",
     "vite": "latest"
-  },"bugs": {
+  },
+  "bugs": {
     "url": "https://github.com/kuankuan2007/vite-plugin-electron/issues",
     "email": "gouhaoming2007@qq.com"
-  }
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },"exports":{
+    "default":"./lib/index.js"
+  },"type": "commonjs",
+  "files": ["lib/**/*"]
 }
